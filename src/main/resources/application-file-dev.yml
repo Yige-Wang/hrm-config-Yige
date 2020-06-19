@@ -1,0 +1,13 @@
+server:
+  port:8001
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ #服务注册的地址
+  instance:
+    instance-id: file-server:8001
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: file-server

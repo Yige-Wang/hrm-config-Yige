@@ -12,7 +12,7 @@ zuul:
       service-id: course-service
     file:
       path: /file/**
-      service-id: course-service
+      service-id: file-service
 
 eureka:
   client:

@@ -13,6 +13,9 @@ zuul:
     file:
       path: /file/**
       service-id: file-server
+    catch:
+      path: /catch/**
+      service-id: catch-server
 
 eureka:
   client:

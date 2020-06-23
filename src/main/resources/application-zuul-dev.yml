@@ -16,6 +16,9 @@ zuul:
     catch:
       path: /catch/**
       service-id: cache-service
+    es:
+      path: /es/**
+      service-id: es-service
 
 eureka:
   client:

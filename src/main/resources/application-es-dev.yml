@@ -1,0 +1,18 @@
+server:
+  port: 6030
+spring:
+  application:
+    name: es-service
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch  # 集群名称
+      cluster-nodes: http://localhost:9200 # 集群地址
+  Jackson:
+    default-property-inclusion: non_null  # 返回的结果是null的就排除
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ #服务注册的地址
+  instance:
+    instance-id: es-server:6030
+    prefer-ip-address: true

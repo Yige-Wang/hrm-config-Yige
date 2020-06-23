@@ -6,7 +6,7 @@ spring:
   data:
     elasticsearch:
       cluster-name: elasticsearch  # 集群名称
-      cluster-nodes: http://192.168.111.1:9200 # 集群地址
+      cluster-nodes: 127.0.0.1:9300 # 集群地址
   Jackson:
     default-property-inclusion: non_null  # 返回的结果是null的就排除
 eureka:
